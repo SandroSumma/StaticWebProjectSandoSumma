@@ -12,15 +12,14 @@
         <ul>
             <a class="icon" href="Main.html"><img src="../images/video-camera.png"></a>
             <li><a href="MovieList.html">MOVIELIST</a></li>
-            <li><a href="EditMovie.html">ADD/DELETE MOVIE</a></li>
+            <li><a href="AddMovie.html">ADD MOVIE</a></li>
             <a class="admin" href="Admin.html"><img src="../images/user-tie.png"></a>
         </ul>
     </nav>
     <div class="admin-container">
-        <h2>Film Toevoegen / Verwijderen</h2>
+        <h2>Film Toevoegen</h2>
 
         <div class="add-film">
-            <h3>Film Toevoegen</h3>
             <form class = "film-form">
                 <label>Titel:</label>
                 <input type="text" id="film-title" placeholder="Titel van de film" required>
@@ -36,9 +35,8 @@
                     <label>Regisseur:</label>
                     <input type="text" id="film-director" placeholder="Naam van de regisseur" required>
                 </div>
-                
-
-                <button type="submit">Film Toevoegen</button>
+            
+                <a href="AddMovie.html"><button type="submit">Film Toevoegen</button></a>
             </form>
         </div>
     </div>

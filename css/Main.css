@@ -79,6 +79,16 @@ a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
+.More {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 h2 {
     font-family: 'Montserrat', serif;
@@ -215,16 +225,11 @@ button:hover {
 }
 
 .admin-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0px 4px 10px grey;
-    width: 100%;
-    max-width: 400px;
+    width: 80%;
     margin: 20px auto;
 }
 
@@ -273,6 +278,17 @@ input{
     width: 70%;
 }
 
+.film-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.film-form input {
+    width: 100%; /* Of een specifieke breedte zoals 300px */
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
 
 @media screen and (max-width: 770px) {
