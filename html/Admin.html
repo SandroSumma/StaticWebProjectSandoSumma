@@ -8,30 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigatiebalk met links naar verschillende pagina's -->
     <nav class="navigatie">
         <ul>
-            <a class="icon" href="Main.html"><img src="../images/video-camera.png"></a>
+            <!-- Logo dat naar de homepagina leidt -->
+            <a class="icon" href="Main.html"><img src="../images/video-camera.png" alt="Logo"></a>
             <li><a href="Main.html">HOME</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#">ABOUT US</a></li>
-            <a class="admin" href="Admin.html"><img src="../images/user-tie.png"></a>
+            <!-- Admin-knop die naar de adminpagina verwijst -->
+            <a class="admin" href="Admin.html"><img src="../images/user-tie.png" alt="Admin"></a>
         </ul>
     </nav>
+
+    <!-- Inlogformulier voor de admin -->
     <div class="login-container">
         <h2>Admin Login</h2>
-        <form action="MovieList.html">
+        <form action="MovieList.html"> 
+            <!-- Invoerveld voor gebruikersnaam -->
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
             
+            <!-- Invoerveld voor wachtwoord -->
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
             
+            <!-- Inlogknop -->
             <button>Login</button>
         </form>
     </div>
-    <footer>
-        <div class="footer-bottom">&copy; ProjectStaticWeb</div>
-    </footer>
 </body>
 </html>

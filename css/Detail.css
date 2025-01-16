@@ -1,0 +1,121 @@
+/* Algemene instellingen */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Detailpagina */
+.detail-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Film Informatie */
+.film-info {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.film-info img {
+    max-width: 250px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.film-details {
+    max-width: 800px;
+}
+
+.film-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.film-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Gerelateerde Films */
+.gerelateerde-films {
+    margin-top: 40px;
+}
+
+.gerelateerde-films h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.film-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.film-box {
+    text-align: center;
+    flex: 0 0 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.film-box p {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.film-box:hover {
+    transform: scale(1.05);
+}
+
+/* Gebruikersreviews */
+.reviews {
+    margin-top: 40px;
+}
+
+.reviews h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review p {
+    font-size: 1.1rem;
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: #f39c12;
+}
+
+.review p, .stars {
+    margin-top: 5px;
+}

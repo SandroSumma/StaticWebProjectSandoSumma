@@ -1,13 +1,13 @@
+/* Algemene instellingen */
 body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 
-
+/* Navigatie */
 .navigatie ul {
     display: flex;
     align-items: center;
@@ -19,24 +19,14 @@ body {
     position: relative;
 }
 
-.navigatie .icon, .navigatie .admin {
-    position: absolute;
-}
-
 .navigatie .icon {
+    position: absolute;
     left: 10px;
 }
 
 .navigatie .admin {
+    position: absolute;
     right: 10px;
-}
-
-.navigatie li {
-    background-color: rgb(162, 18, 18);
-}
-
-li:hover {
-    background-color: rgb(230, 13, 13);
 }
 
 .navigatie a {
@@ -46,20 +36,39 @@ li:hover {
     display: block;
 }
 
-a:hover {
+.navigatie a:hover {
     color: black;
 }
 
+/* Introductie sectie */
 .intro {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: rgb(100, 0, 0);
     color: rgb(188, 166, 4);
+    background-color: rgb(112, 1, 1);
+    text-align: center;
     padding: 20px;
 }
 
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(101, 104, 0, 0.8);
+}
+
+/* Achtergrondafbeelding */
+.image {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/Background.jpg);
+    background-attachment: fixed;
+}
+
+/* Grid voor filmboxen */
 .grid-box {
     display: flex;
     justify-content: center;
@@ -79,41 +88,20 @@ a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-.More {
-    display: block;
-    margin: 20px auto; 
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.film-box:hover {
+    transform: scale(1.05);
 }
 
-
-h2 {
-    font-family: 'Montserrat', serif;
-}
-
-h3 {
-    font-family: 'Montserrat', serif;
-    color: rgb(188, 166, 4);
-    text-align: center;
-    margin-top: 10px;
-}
-
+/* Voettekst */
 footer {
     background-color: rgb(162, 18, 18);
     color: rgb(188, 166, 4);
     text-align: center;
     padding: 20px 0;
-    margin-top: auto;
     font-family: "Courier New", Courier, monospace;
 }
 
-.footer-bottom {
-    font-size: 15px;
-}
-
+/* Knoppen */
 button {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(188, 166, 4);
@@ -122,42 +110,43 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: rgb(230, 13, 13);
 }
 
-img {
-    max-width: 100%;
+.More {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
 }
 
+/* Login-container */
 .login-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0px 4px 10px grey;
-    width: 100%;
     max-width: 400px;
     margin: 20px auto;
 }
 
 .login-container h2 {
     font-family: 'Montserrat', serif;
-    margin-bottom: 20px;
     color: rgb(162, 18, 18);
 }
 
-label {
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: rgb(162, 18, 18);
-}
-
+/* Input velden */
 input {
     padding: 10px;
     margin-bottom: 20px;
@@ -168,20 +157,7 @@ input {
     outline: none;
 }
 
-button {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(188, 166, 4);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: rgb(230, 13, 13);
-}
-
+/* Detailpagina voor films */
 .Detail {
     background-color: rgb(100, 0, 0);
     color: rgb(188, 166, 4);
@@ -190,42 +166,25 @@ button:hover {
     margin: 40px auto;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    font-family: 'Roboto', sans-serif;
 }
 
 .Detail h2 {
     font-family: 'Montserrat', serif;
     font-size: 2rem;
-    margin-top: 0;
 }
 
 .Detail p {
     font-size: 1rem;
     line-height: 1.6;
-    margin: 10px 0;
-}
-
-.Detail strong {
-    font-weight: bold;
 }
 
 .Detail button {
-    background-color: rgb(188, 166, 4);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
     margin-top: 20px;
 }
 
-.Detail button:hover {
-    background-color: rgb(230, 13, 13);
-}
-
+/* Admin-container */
 .admin-container {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 12px;
     padding: 40px;
     box-shadow: 0px 4px 10px grey;
@@ -237,13 +196,9 @@ button:hover {
     font-family: 'Montserrat', serif;
     color: rgb(162, 18, 18);
     font-size: 24px;
-    margin-bottom: 20px;
 }
 
-.Listbutton{
-    margin: 3px;
-}
-
+/* Film tabel */
 .film-table {
     border-collapse: collapse;
     margin-bottom: 20px;
@@ -258,85 +213,89 @@ button:hover {
 .film-table th {
     background-color: rgb(162, 18, 18);
     color: white;
-    font-size: 16px;
 }
 
-.film-table td {
-    background-color: rgb(255, 255, 255);
-    font-size: 14px;
-}
-
+/* Zoekveld */
 .search-box {
-    margin-bottom: 20px;
     border: 1px solid rgb(188, 166, 4);
     border-radius: 8px;
     font-size: 16px;
-    outline: none;
 }
 
-input{
-    width: 70%;
-}
-
-.film-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
+/* Formulier voor filmbeheer */
 .film-form input {
-    width: 100%; /* Of een specifieke breedte zoals 300px */
+    width: 100%;
     padding: 8px;
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
+/* Detailpagina van een film */
+.detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+/* Film Informatie */
+.film-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.film-info img {
+    width: 250px;
+    border-radius: 8px;
+}
+
+/* Gerelateerde Films */
+.gerelateerde-films {
+    margin-top: 40px;
+}
+
+.film-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+/* Reviews */
+.reviews {
+    margin-top: 30px;
+}
+
+.review {
+    background: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.stars {
+    color: gold;
+}
+
+/* Media query voor schermen kleiner dan 770px */
 @media screen and (max-width: 770px) {
     .navigatie ul {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        
-    }
-
-    .grid-box {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .login-container {
-        padding: 20px;
-    }
-
-    .Detail {
-        padding: 20px;
-    }
-
-    .navigatie a {
-        padding: 1rem;
-        font-size: 14px;
     }
 
     .login-container {
         width: 80%;
-        padding: 30px;
     }
 
-    .admin-container{
+    .admin-container {
         width: 70%;
     }
 
-    .film-table th, .film-table td{
+    .film-table th, .film-table td {
         padding: 4px;
     }
 
-    .Detail button {
-        width: 100%;
-    }
-
-    input{
+    input {
         width: 70%;
     }
-
 }

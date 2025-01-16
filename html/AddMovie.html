@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
+    <title>Film Toevoegen</title>
     <link rel="stylesheet" href="../css/Main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navigatiebalk -->
     <nav class="navigatie">
         <ul>
-            <a class="icon" href="Main.html"><img src="../images/video-camera.png"></a>
+            <a class="icon" href="Main.html"><img src="../images/video-camera.png" alt="Logo"></a>
             <li><a href="MovieList.html">MOVIELIST</a></li>
             <li><a href="AddMovie.html">ADD MOVIE</a></li>
-            <a class="admin" href="Admin.html"><img src="../images/user-tie.png"></a>
+            <a class="admin" href="Admin.html"><img src="../images/user-tie.png" alt="Admin"></a>
         </ul>
     </nav>
+
+    <!-- Container voor film toevoegen -->
     <div class="admin-container">
         <h2>Film Toevoegen</h2>
-
         <div class="add-film">
-            <form class = "film-form">
-                <label>Titel:</label>
+            <form class="film-form">
+                
+                <!-- Invoervelden voor filmgegevens -->
+                <label for="film-title">Titel:</label>
                 <input type="text" id="film-title" placeholder="Titel van de film" required>
-                <div>
-                    <label>Genre:</label>
+
+                <label for="film-genre">Genre:</label>
                 <input type="text" id="film-genre" placeholder="Genre van de film" required>
-                </div>
-                <div>
-                    <label>Jaar:</label>
-                    <input type="number" id="film-year" placeholder="Jaar van uitgave" required>
-                </div>
-                <div>
-                    <label>Regisseur:</label>
-                    <input type="text" id="film-director" placeholder="Naam van de regisseur" required>
-                </div>
-            
-                <a href="AddMovie.html"><button type="submit">Film Toevoegen</button></a>
+
+                <label for="film-year">Jaar:</label>
+                <input type="number" id="film-year" placeholder="Jaar van uitgave" required>
+
+                <label for="film-director">Regisseur:</label>
+                <input type="text" id="film-director" placeholder="Naam van de regisseur" required>
+
+                <!-- Knop om de film toe te voegen -->
+                <button type="submit">Film Toevoegen</button>
             </form>
         </div>
     </div>
-    <footer>
-        <div class="footer-bottom">&copy; ProjectStaticWeb</div>
-    </footer>
+
 </body>
 </html>

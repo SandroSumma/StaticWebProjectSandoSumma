@@ -8,67 +8,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigatiebalk met links naar verschillende pagina's -->
     <nav class="navigatie">
         <ul>
-            <a class = "icon" href="Main.html"><img src="../images/video-camera.png"></a>
+            <!-- Logo / Home-knop -->
+            <a class="icon" href="Main.html"><img src="../images/video-camera.png"></a>
             <li><a href="Main.html">HOME</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#">ABOUT US</a></li>
-            <a class = "admin" href="Admin.html"><img src="../images/user-tie.png"></a>
+            <!-- Admin-knop -->
+            <a class="admin" href="Admin.html"><img src="../images/user-tie.png"></a>
         </ul>
     </nav>
-    <div class = "intro">
-        <h1>Welkom op mijn Filmwebsite</h1>
-        <p>Aleen de beste film hier te zien</p>
-    </div>
-    <div class="grid-box">
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
-        </div>
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
-        </div>
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
-        </div>
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
+
+    <!-- Introductietekst over racefilms -->
+    <div class="intro">
+        <div class="intro-text">
+            <h1>Welkom bij de Wereld van Racefilms</h1>
+            <p>Stap in de cockpit en ervaar de spanning van de snelste voertuigen, legendarische races en de meest iconische
+             rivaliteiten uit de filmgeschiedenis. Van de onvergetelijke Formule 1-seizoenen tot epische straatraces,
+             hier vind je de beste racefilms die de adrenaline door je aderen laten stromen.</p>
         </div>
     </div>
-    <div class="grid-box">
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
+
+    <!-- Overzicht van films met details-knoppen -->
+    <div class="image">
+        <div class="grid-box">
+            <!-- Eerste rij met films -->
+            <div class="film-box">
+                <img src="../images/F1movie.png" alt="F1movie">
+                <h3>Rush</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
+            <div class="film-box">
+                <img src="../images/FordvFerrari.png" alt="FordvFerrari">
+                <h3>Ford v Ferrari</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
+            <div class="film-box">
+                <img src="../images/LeMans.png" alt="LeMans">
+                <h3>Le Mans '66</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
+            <div class="film-box">
+                <img src="../images/Senna.png" alt="Senna">
+                <h3>Senna</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
         </div>
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
+
+        <div class="grid-box">
+            <!-- Tweede rij met films -->
+            <div class="film-box">
+                <img src="../images/LeMans.png" alt="LeMans">
+                <h3>Le Mans '66</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
+            <div class="film-box">
+                <img src="../images/F1movie.png" alt="F1movie">
+                <h3>Rush</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
+            <div class="film-box">
+                <img src="../images/Senna.png" alt="Senna">
+                <h3>Senna</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
+            <div class="film-box">
+                <img src="../images/FordvFerrari.png" alt="FordvFerrari">
+                <h3>Ford v Ferrari</h3>
+                <a href="Detail.html"><button>Details</button></a>
+            </div>
         </div>
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
-        </div>
-        <div class="film-box">
-            <img src="../images/F1movie.png" alt="F1movie">
-            <h3>Rush</h3>
-            <a href="Detail.html"><button>Details</button></a>
+
+        <!-- Knop om meer films te bekijken -->
+        <div>
+            <button class="More">Meer bekijken</button>
         </div>
     </div>
-    <div>
-        <button class="More">Meer bekijken</button>
-    </div>
+
+    <!-- Footer met copyright-vermelding -->
     <footer>
         <div class="footer-bottom">&copy; ProjectStaticWeb</div>
     </footer>
