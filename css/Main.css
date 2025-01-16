@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigatie {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.navigatie ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: rgb(162, 18, 18);
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.navigatie .icon {
+    position: absolute;
+    left: 10px;
+}
+
+.navigatie .icon img {
+    max-width: 40px;
+}
+
+.navigatie .admin {
+    position: absolute;
+    right: 10px;
+}
+
+.navigatie .admin img {
+    max-width: 40px;
+}
+
+.navigatie li {
+    background-color: rgb(162, 18, 18);
+}
+
+li:hover {
+    background-color: rgb(230, 13, 13);
+}
+
+.navigatie a {
+    color: rgb(188, 166, 4);
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+a:hover {
+    color: black;
+}
+
+.intro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(100, 0, 0);
+    color:rgb(188, 166, 4)
+}
+
+div {
+    display: block;
+}
+
+.grid-box {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.film-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(162, 18, 18);
+    border-radius: 12px; 
+}
+
+h2 {
+    font-family: 'Montserrat', serif;
+}
+
+h3 {
+    font-family: 'Montserrat', serif;
+    color: rgb(188, 166, 4);
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgb(162, 18, 18);
+    color: rgb(188, 166, 4);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.footer-bottom {
+    font-size: 15px;
+}
+
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(188, 166, 4);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(230, 13, 13);
+}
+
+img {
+    max-width: 100%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px; 
+    padding: 40px;
+    box-shadow: 0px 4px 10px grey;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.login-container h2 {
+    font-family: 'Montserrat', serif;
+    margin-bottom: 20px;
+    color: rgb(162, 18, 18);
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: rgb(162, 18, 18);
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid rgb(188, 166, 4);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(188, 166, 4);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(230, 13, 13);
+}
+
+.Detail {
+    background-color: rgb(100, 0, 0);
+    color: rgb(188, 166, 4);
+    padding: 20px;
+    max-width: 90%;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.Detail h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.Detail p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.Detail strong {
+    font-weight: bold;
+}
+
+.Detail button {
+    background-color: rgb(188, 166, 4);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.Detail button:hover {
+    background-color: rgb(230, 13, 13);
+}
+
+.admin-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+.admin-container h2 {
+    font-family: 'Montserrat', serif;
+    color: rgb(162, 18, 18);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.film-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.film-table th, .film-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgb(188, 166, 4);
+}
+
+.film-table th {
+    background-color: rgb(162, 18, 18);
+    color: white;
+    font-size: 16px;
+}
+
+.film-table td {
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.search-box {
+    max-width: fit-content;
+    margin-bottom: 20px;
+    border: 1px solid rgb(188, 166, 4);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input{
+    max-width: 99%;
+}

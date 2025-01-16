@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../css/Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navigatie">
+        <ul>
+            <a class="icon" href="Main.html"><img src="../images/video-camera.png"></a>
+            <li><a href="MovieList.html">MOVIELIST</a></li>
+            <li><a href="EditMovie.html">ADD/DELETE MOVIE</a></li>
+            <a class="admin" href="Admin.html"><img src="../images/user-tie.png"></a>
+        </ul>
+    </nav>
+    <div class="admin-container">
+        <h2>Film Toevoegen / Verwijderen</h2>
+
+        <div class="add-film">
+            <h3>Film Toevoegen</h3>
+            <form>
+                <label>Titel:</label>
+                <input type="text" id="film-title" placeholder="Titel van de film" required>
+
+                <label>Genre:</label>
+                <input type="text" id="film-genre" placeholder="Genre van de film" required>
+
+                <label>Jaar:</label>
+                <input type="number" id="film-year" placeholder="Jaar van uitgave" required>
+
+                <label>Regisseur:</label>
+                <input type="text" id="film-director" placeholder="Naam van de regisseur" required>
+
+                <button type="submit">Film Toevoegen</button>
+            </form>
+        </div>
+
+        <div class="delete-film">
+            <h3>Film Verwijderen</h3>
+            <form>
+                <label>Film Naam:</label>
+                <input id="film-id" placeholder="Voer de film ID in" required>
+
+                <button type="submit">Film Verwijderen</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bottom">&copy; ProjectStaticWeb</div>
+    </footer>
+</body>
+</html>

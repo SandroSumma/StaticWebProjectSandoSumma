@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../css/Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navigatie">
+        <ul>
+            <a class="icon" href="Main.html"><img src="../images/video-camera.png"></a>
+            <li><a href="MovieList.html">MOVIELIST</a></li>
+            <li><a href="EditMovie.html">ADD/DELETE MOVIE</a></li>
+            <a class="admin" href="Admin.html"><img src="../images/user-tie.png"></a>
+        </ul>
+    </nav>
+    <div class="admin-container">
+        <h2>Film Overzicht</h2>
+        <input type="text" id="search" placeholder="Zoek een film..." class="search-box">
+
+        <table class="film-table">
+            <thead>
+                <tr>
+                    <th>Titel</th>
+                    <th>Genre</th>
+                    <th>Jaar</th>
+                    <th>Acties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rush (2013)</td>
+                    <td>Actie, Drama</td>
+                    <td>2013</td>
+                    <td>
+                        <button>Bewerken</button>
+                        <button>Verwijderen</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button>Film Toevoegen</button>
+    </div>
+    <footer>
+        <div class="footer-bottom">&copy; ProjectStaticWeb</div>
+    </footer>
+</body>
+</html>
