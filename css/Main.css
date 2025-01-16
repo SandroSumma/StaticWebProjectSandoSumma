@@ -7,11 +7,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.navigatie {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-}
 
 .navigatie ul {
     display: flex;
@@ -24,22 +19,16 @@ body {
     position: relative;
 }
 
-.navigatie .icon {
+.navigatie .icon, .navigatie .admin {
     position: absolute;
+}
+
+.navigatie .icon {
     left: 10px;
 }
 
-.navigatie .icon img {
-    max-width: 40px;
-}
-
 .navigatie .admin {
-    position: absolute;
     right: 10px;
-}
-
-.navigatie .admin img {
-    max-width: 40px;
 }
 
 .navigatie li {
@@ -61,23 +50,21 @@ a:hover {
     color: black;
 }
 
-.intro{
-    display:flex;
+.intro {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: rgb(100, 0, 0);
-    color:rgb(188, 166, 4)
-}
-
-div {
-    display: block;
+    color: rgb(188, 166, 4);
+    padding: 20px;
 }
 
 .grid-box {
     display: flex;
     justify-content: center;
     margin: 10px;
+    flex-wrap: wrap;
 }
 
 .film-box {
@@ -88,8 +75,10 @@ div {
     width: 200px;
     text-align: center;
     background-color: rgb(162, 18, 18);
-    border-radius: 12px; 
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
 }
+
 
 h2 {
     font-family: 'Montserrat', serif;
@@ -115,14 +104,13 @@ footer {
     font-size: 15px;
 }
 
-
 button {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(188, 166, 4);
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px; 
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -140,7 +128,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    border-radius: 12px; 
+    border-radius: 12px;
     padding: 40px;
     box-shadow: 0px 4px 10px grey;
     width: 100%;
@@ -227,12 +215,17 @@ button:hover {
 }
 
 .admin-container {
-    margin: 20px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
+    padding: 40px;
     box-shadow: 0px 4px 10px grey;
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
 }
 
 .admin-container h2 {
@@ -242,8 +235,11 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.Listbutton{
+    margin: 3px;
+}
+
 .film-table {
-    width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
@@ -266,7 +262,6 @@ button:hover {
 }
 
 .search-box {
-    max-width: fit-content;
     margin-bottom: 20px;
     border: 1px solid rgb(188, 166, 4);
     border-radius: 8px;
@@ -275,5 +270,57 @@ button:hover {
 }
 
 input{
-    max-width: 99%;
+    width: 70%;
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .navigatie ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .grid-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .Detail {
+        padding: 20px;
+    }
+
+    .navigatie a {
+        padding: 1rem;
+        font-size: 14px;
+    }
+
+    .login-container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .admin-container{
+        width: 70%;
+    }
+
+    .film-table th, .film-table td{
+        padding: 4px;
+    }
+
+    .Detail button {
+        width: 100%;
+    }
+
+    input{
+        width: 70%;
+    }
+
 }
